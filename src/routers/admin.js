@@ -9,7 +9,7 @@ const User = require('../models/user')
 
 const router = new express.Router()
 
-router.post('/menu', auth, authRole("Admin"), async (req, res)=>{
+router.post('/menu', auth, authRole, async (req, res)=>{
     const menu = new Menu({
         ...req.body,
         name: req.user.name
@@ -23,7 +23,7 @@ router.post('/menu', auth, authRole("Admin"), async (req, res)=>{
     }
 })
 
-router.patch('/menu/:id', auth, authRole("Admin"), async(req, res)=>{
+router.patch('/menu/:id', auth, authRole, async(req, res)=>{
     const updates = Object.keys(req.body)
     const isValidUpdates= ['restaurant', 'menu', 'price']
 
@@ -52,7 +52,7 @@ router.patch('/menu/:id', auth, authRole("Admin"), async(req, res)=>{
 
 })
 
-router.get('/menu', auth, authRole("Admin"), async(req, res)=>{
+router.get('/menu', auth, authRole, async(req, res)=>{
     const menu = await Menu.find({})
     res.send(menu)
 })

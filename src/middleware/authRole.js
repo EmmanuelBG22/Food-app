@@ -1,8 +1,12 @@
 const User = require('../models/user')
 
 const authRole = async (req, res, next) =>{
-    const user = await User.find({roles: "Admin"})
-    console.log(user)
+    const user = await User.findOne({roles: "Admin"})
+
+    // for(let i=0;i<user.length;i++){
+
+    // }
+    
 
     try{
         if(user.roles[0] !== "Admin"){
