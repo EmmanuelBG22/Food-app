@@ -58,6 +58,7 @@ const userSchema = new mongoose.Schema({
         {
         type: String,
         enum: ['User', 'Admin'],
+        default: 'User',
         required: true
     }
 ]
@@ -108,19 +109,6 @@ userSchema.methods.generateAuthToken = async function () {
     return token
 }
 
-
-//geberate token for admin user
-userSchema.methods.generateAdminAuthToken = async function () {
-    const user = this
-    const token = jwt.sign({_id: user._id.toString()}, process.env.JWT_SECRETS)
-    console.log(token)
-
-    user.tokens = user.tokens.concat({token})
-
-    await user.save()
-
-    return token
-}
 
 
 
