@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            background: linear-gradient(90deg, greenyellow, red);
+        }
+        #register-form{
+            display:flex;
+            flex-direction: column;
+            border: solid 2px greenyellow;
+            padding: 20px;
+            margin: 100px auto ;
+        }
+        .form-input{
+            margin: 10px auto;
+            width: 500px;
+            height: 50px;
+        }
+
+        .form-label{
+            margin: 0px auto;
+        }
+
+        button{
+            margin: 10px auto;
+            width: 300px;
+            height: 50px;
+            background-color: #2ebf91;
+        }
+
+       #sub-text{
+           text-align: center;
+       }
+    </style>
+</head>
+<body>
+    <form id="register-form" action="/users" method="POST">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-input" name="name" placeholder="fullname">
+        <label for="email" class="form-label">Email Address</label>
+        <input type="email" class="form-input" name="email" placeholder="email address">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-input" name="password" placeholder="************">
+    
+        <button id="update-btn">Submit</button>
+
+        <div id="sub-text">Already have an account? <a href="login.html">Log in</a></div>
+    </form>
+</body>
+</html>

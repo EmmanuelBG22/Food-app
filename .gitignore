@@ -1,4 +1,5 @@
-Api_server/node_modules
-Api_server/config
-Api_server/mongodb.js
-Api_server/templates/
+node_modules/
+server/config
+server/mongodb.js
+server/templates/
+

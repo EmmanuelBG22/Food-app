@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #8360c3, #2ebf91);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .delete{
+            margin: 20px 0;
+        }
+        #update-form, #delete-form{
+            display:flex;
+            flex-direction: column;
+            border: solid 2px greenyellow;
+            background: rgba(255, 200, 40, 0.1);
+            padding: 20px;
+            margin: 50px auto ;
+        }
+        .form-input{
+            margin: 10px auto;
+            width: 500px;
+            height: 50px;
+        }
+
+        .form-label{
+            margin: 0px auto;
+        }
+
+        form div{
+            text-align: center;
+        }
+
+        button{
+            margin: 10px auto;
+            width: 300px;
+            height: 50px;
+            background-color: #2ebf91;
+        }
+
+        #nav-lists{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .nav-items{
+            list-style-type: none;
+            margin: 0 10px;
+        }
+
+        .nav-links{
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav-links:hover{
+            color:rgba(255, 200, 40, 0.5)
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <nav id="nav">
+            <ul id="nav-lists">
+                <li class="nav-items"><a href="order.html" class="nav-links">Create Order</a></li>
+                <li class="nav-items"><a href="edit-order.html" class="nav-links">Edit Order</a></li>
+                <li class="nav-items"><a href="menu.html" class="nav-links">Create Menu</a></li>
+                <li class="nav-items"><a href="update-menu.html" class="nav-links">Update Menu</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <fieldset id="update-field" class="delete">
+        <legend>Update Order</legend>
+    <form id="update-form" action="">
+        <label for="Order-Id" class="form-label">Order Id</label>
+        <input type="text" class="form-input" name="id" placeholder="order id">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" class="form-input" name="email" placeholder="food description">
+        <label for="price" class="form-label">Price</label>
+        <input type="text" class="form-input" name="price" placeholder="Price">
+
+        <button id="update-btn">Submit</button>
+    </form>
+    </fieldset>
+
+    <fieldset id="delete-field" class="delete">
+        <legend>Delete Order</legend>
+    <form id="delete-form" action="">
+        <label for="Order-Id" class="form-label">Order Id</label>
+        <input type="text" class="form-input" name="id" placeholder="order id">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" class="form-input" name="email" placeholder="food description">
+        <label for="price" class="form-label">Price</label>
+        <input type="text" class="form-input" name="price" placeholder="Price">
+        <button id="delete-btn">Submit</button>
+    </form>
+    </fieldset>
+
+    <div id="success"></div>
+
+</body>
+</html>
+</body>
+</html>
