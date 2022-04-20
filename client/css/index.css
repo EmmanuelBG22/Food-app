@@ -103,9 +103,9 @@ body{
 
 #register-form{
     width: 80%;
-    top: 20%;
-    left: 10%;
-    position:absolute;
+    max-width: 800px;
+    margin: 50px auto;
+    position:relative;
     border: solid 2px;
     padding: 30px;
     border-radius: 3%;
