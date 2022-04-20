@@ -1,0 +1,156 @@
+body{
+    background-color: aquamarine;
+}
+
+.img-fluid{
+    height: 400px;
+    width: 100%;
+    border-radius: 3%;
+}
+
+#header-text{
+    width: 100%;
+    margin: 20px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+}
+
+#container{
+    margin: 20px
+}
+
+#header-text h1{
+    text-align: center;
+}
+
+#page-image img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+#order-buttons{
+    position: relative;
+    margin-top: 10px;
+    margin: 10px 20px;
+}
+
+#create-new-order{
+    border: 2px solid;
+    margin: 20px;
+    padding: 10px;
+}
+
+#menu{
+    border: solid 2px;
+    height: 200px;
+    margin: 50px 20px;
+    padding: 10px;
+}
+
+#previous{
+    margin: 20px 20px;
+    border: solid 2px;
+}
+
+#create-order{
+    border: solid 2px;
+    height: 200px;
+    margin: 30px 20px;
+    padding: 10px;
+}
+
+#see-menu{
+    border: solid 2px;
+    padding: 10px;
+    height: 100px;
+    margin: 30px 20px;
+}
+
+#edit-order{
+        border: solid 2px;
+        padding: 10px;
+        height: 300px;
+        margin: 30px 20px;
+}
+
+#login-form{
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    position:absolute;
+    border: solid 2px;
+    padding: 30px;
+    border-radius: 3%;
+    background-color: aliceblue;
+}
+
+#seeAll{
+    margin: 20px 10px;
+}
+
+.col{
+    width: 100px;
+    height: 100px;
+}
+
+.img-x{
+    height:100px;
+}
+
+#register{
+    margin: 10px 0px;
+}
+
+#register-form{
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    position:absolute;
+    border: solid 2px;
+    padding: 30px;
+    border-radius: 3%;
+    background-color: aliceblue;
+}
+
+
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px;
+    background-color: white;
+    max-height: 40px;
+}
+
+#nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items{
+    margin: 0px 20px;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.nav-links{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.nav-links:hover{
+    color: blue;
+    font-size: 18px;
+}
+
+#footer{
+    background-color: white;
+    position: absolute;
+    bottom: 0%;
+    height: 30px;
+    width: 100%;
+}
